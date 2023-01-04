@@ -3,9 +3,7 @@ def optimized_bubble_sort(num_list):
         swapped = False
         for j in range(len(num_list) - i - 1):
             if num_list[j] > num_list[j + 1]:
-                temp = num_list[j + 1]
-                num_list[j + 1] = num_list[j]
-                num_list[j] = temp
+                num_list[j], num_list[j + 1] = num_list[j + 1], num_list[j]
 
                 swapped = True
 
